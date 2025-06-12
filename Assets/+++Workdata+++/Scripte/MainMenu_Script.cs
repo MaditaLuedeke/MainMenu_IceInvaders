@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class MainMenu_Script : MonoBehaviour
 {
+    [Header("___Settings___")]
+    
+    //[SerializeField] private AudioMixer audiomixer;
 
     [SerializeField] public Slider masterVolumeSlider;
     [SerializeField] private TMPro.TextMeshProUGUI masterPercentText;
@@ -55,7 +58,6 @@ public class MainMenu_Script : MonoBehaviour
             LoadSettingsFromPP();
         }
     }
-    
     
     
     //----------Player Pref's Functions---------
@@ -119,6 +121,8 @@ public class MainMenu_Script : MonoBehaviour
     {
         masterVolumeFloat = masterVolumeSlider.value; //adjusting the Volume with the Slider
         
+        //audiomixer.SetFloat("masterVolume", Mathf.Log10(masterVolumeFloat) * 20);
+        
         masterPercentText.text = ((masterVolumeFloat * 100).ToString("0") + "%");
         
         PlayerPrefs.SetFloat(masterVolume, masterVolumeFloat);
@@ -130,6 +134,8 @@ public class MainMenu_Script : MonoBehaviour
     {
         sfxVolumeFloat = sfxVolumeSlider.value;
         
+        //audiomixer.SetFloat("sfxVolume", Mathf.Log10(sfxVolumeFloat) * 20);
+        
         sfxPercentText.text = ((sfxVolumeFloat * 100).ToString("0") + "%");
         
         PlayerPrefs.SetFloat(sfxVolume, sfxVolumeFloat);
@@ -140,6 +146,8 @@ public class MainMenu_Script : MonoBehaviour
     public void ChangeEffectVolume()
     {
         effectVolumeFloat = effectVolumeSlider.value;
+        
+        //audiomixer.SetFloat("sfxVolume", Mathf.Log10(sfxVolumeFloat) * 20);
         
         effectPercentText.text = ((effectVolumeFloat * 100).ToString("0") + "%");
         
