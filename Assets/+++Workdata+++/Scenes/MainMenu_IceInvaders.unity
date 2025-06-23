@@ -2563,6 +2563,34 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 5c83d5fb572a6694383ad8e06d68614c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 5c83d5fb572a6694383ad8e06d68614c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 5c83d5fb572a6694383ad8e06d68614c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2045921169}
+    - target: {fileID: 4114026738909334718, guid: 5c83d5fb572a6694383ad8e06d68614c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 5c83d5fb572a6694383ad8e06d68614c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 5c83d5fb572a6694383ad8e06d68614c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenu_Script, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 5c83d5fb572a6694383ad8e06d68614c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4465354238975234195, guid: 5c83d5fb572a6694383ad8e06d68614c, type: 3}
       propertyPath: m_Type
       value: 0
@@ -4466,7 +4494,7 @@ MonoBehaviour:
   sfxPercentText: {fileID: 1613462141}
   effectVolumeSlider: {fileID: 880443070}
   effectPercentText: {fileID: 284985535}
-  fullscreenToggle: {fileID: 0}
+  fullscreenToggle: {fileID: 1748251117}
 --- !u!4 &2045921170
 Transform:
   m_ObjectHideFlags: 0

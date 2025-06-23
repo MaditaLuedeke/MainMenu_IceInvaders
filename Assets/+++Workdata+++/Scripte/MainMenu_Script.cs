@@ -164,6 +164,11 @@ public class MainMenu_Script : MonoBehaviour
     }
 
     #endregion
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
 
 
