@@ -17,6 +17,10 @@ public class MainMenu_Script : MonoBehaviour
     [SerializeField] public Slider effectVolumeSlider;
     [SerializeField] private TMPro.TextMeshProUGUI effectPercentText;
     
+    [Header("___Fullscreen Toggle___")]
+
+    [SerializeField] public Toggle fullscreenToggle;
+    private bool getFullBoolFromToggle;
     
     
     //------------Player Pref's---------
@@ -100,18 +104,23 @@ public class MainMenu_Script : MonoBehaviour
     #region
     
     //Fullscreen Function
-    public void ChangeFullscreenState(bool getFullBoolFromToggle)
+    public void ChangeFullscreenState()
     {
         //when user clicks the toggle in Unity
-        Screen.fullScreen= getFullBoolFromToggle;
+        getFullBoolFromToggle = fullscreenToggle.isOn;
+        Debug.Log ("Changing Fullscreen state to: " + getFullBoolFromToggle);
 
         if (getFullBoolFromToggle == true)
         {
             PlayerPrefs.SetInt(FullscreenInPP, 0);
+            
+            Screen.fullScreen = true;
         }
         else
         {
             PlayerPrefs.SetInt(FullscreenInPP, 1);
+            
+            Screen.fullScreen = false;
         }
     }
     

@@ -2931,6 +2931,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.69563
       objectReference: {fileID: 0}
+    - target: {fileID: 4132358078313256928, guid: 660ac9847ede5f3469b13087cd6dc20d, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4190250530026403860, guid: 660ac9847ede5f3469b13087cd6dc20d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -3151,6 +3155,22 @@ PrefabInstance:
     - target: {fileID: 3374196259188089855, guid: 660ac9847ede5f3469b13087cd6dc20d, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -684.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132358078313256928, guid: 660ac9847ede5f3469b13087cd6dc20d, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132358078313256928, guid: 660ac9847ede5f3469b13087cd6dc20d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5622713
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132358078313256928, guid: 660ac9847ede5f3469b13087cd6dc20d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5622713
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132358078313256928, guid: 660ac9847ede5f3469b13087cd6dc20d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5924529
       objectReference: {fileID: 0}
     - target: {fileID: 4190250530026403860, guid: 660ac9847ede5f3469b13087cd6dc20d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4446,6 +4466,7 @@ MonoBehaviour:
   sfxPercentText: {fileID: 1613462141}
   effectVolumeSlider: {fileID: 880443070}
   effectPercentText: {fileID: 284985535}
+  fullscreenToggle: {fileID: 0}
 --- !u!4 &2045921170
 Transform:
   m_ObjectHideFlags: 0
@@ -4878,6 +4899,10 @@ PrefabInstance:
     - target: {fileID: 2276923317831687074, guid: 660ac9847ede5f3469b13087cd6dc20d, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132358078313256928, guid: 660ac9847ede5f3469b13087cd6dc20d, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4190250530026403860, guid: 660ac9847ede5f3469b13087cd6dc20d, type: 3}
       propertyPath: m_AnchorMax.y
